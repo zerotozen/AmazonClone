@@ -4,7 +4,10 @@ module.exports = {
     es6: true,
     node: true,
   },
-  extends: ["eslint:recommended", "google", "parser: @babel/eslint-parser"],
+  parserOptions: {
+    ecmaVersion: 8,
+  },
+  extends: ["eslint:recommended", "google"],
   rules: {
     quotes: ["error", "double"],
   },
