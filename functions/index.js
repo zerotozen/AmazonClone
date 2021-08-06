@@ -2,14 +2,15 @@ const functions = require("firebase-functions");
 const express = require("express");
 const cors = require("cors");
 const stripe = require("stripe")(
-  "sk_test_51JJ2LsFKj0H50yPF0NsrevPKHM8GeLfKIe4SULSSwvWYbCApc6WOWL6MV3r6xRZlBixx3QWe9gBvqze7ojYyz8RP00XXGYcN84"
+    `sk_test_51JJ2LsFKj0H50yPF0NsrevPKHM8GeLfKIe4SULS
+  SwvWYbCApc6WOWL6MV3r6xRZlBixx3QWe9gBvqze7ojYyz8RP00XXGYcN84`,
 );
 
 // App config
 const app = express();
 
 // Middlewares
-app.use(cors({ origin: true }));
+app.use(cors({origin: true}));
 app.use(express.json());
 
 // API routes
